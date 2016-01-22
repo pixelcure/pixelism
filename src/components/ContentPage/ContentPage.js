@@ -27,12 +27,10 @@ class ContentPage extends Component {
   render() {
     this.context.onSetTitle(this.props.title);
     return (
-      <div className={s.root}>
-        <div className={s.container}>
+      <section className={s.root}>
           {this.props.path === '/' ? null : <h1>{this.props.title}</h1>}
           <div dangerouslySetInnerHTML={{ __html: this.props.content || '' }} />
-        </div>
-      </div>
+      </section>
     );
   }
 

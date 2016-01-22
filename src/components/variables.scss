@@ -1,7 +1,14 @@
 /*
+ * Typography Imports
+ * ========================================================================== */
+
+ @import url(https://fonts.googleapis.com/css?family=Nothing+You+Could+Do);
+
+/*
  * Colors
  * ========================================================================== */
 
+$black : #000;
 $white-base:            hsl(255, 255, 255);
 $gray-darker:           color(black lightness(+13.5%)); /* #222 */
 $gray-dark:             color(black lightness(+25%));   /* #404040 */
@@ -13,7 +20,8 @@ $gray-lighter:          color(black lightness(+93.5%)); /* #eee */
  * Typography
  * ========================================================================== */
 
-$font-family-base:      'Segoe UI', 'HelveticaNeue-Light', sans-serif;
+$font-family-base : 'Segoe UI', 'HelveticaNeue-Light', sans-serif;
+$nycd : 'Nothing You Could Do', sans-serif;
 
 /*
  * Layout

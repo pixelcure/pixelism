@@ -8,33 +8,20 @@
  */
 
 import React, { Component, PropTypes } from 'react';
-import s from './LoginPage.scss';
+import s from './Hero.scss';
 import withStyles from '../../decorators/withStyles';
 
-const title = 'Log In';
-
 @withStyles(s)
-class LoginPage extends Component {
-
-  static contextTypes = {
-    onSetTitle: PropTypes.func.isRequired,
-  };
-
-  componentWillMount() {
-    this.context.onSetTitle(title);
-  }
+class Hero extends Component {
 
   render() {
     return (
-      <div className={s.root}>
-        <div className={s.container}>
-          <h1>{title}</h1>
-          <p>...</p>
-        </div>
-      </div>
+        <section className={s.hero}>
+          <span>Hero</span>
+        </section>
     );
   }
 
 }
 
-export default LoginPage;
+export default Hero;

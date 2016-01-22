@@ -34,7 +34,7 @@ class Html extends Component {
       `r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));` +
       `ga('create','${googleAnalyticsId}','auto');ga('send','pageview');`,
     });
-  }
+  };
 
   render() {
     return (
@@ -49,7 +49,7 @@ class Html extends Component {
         <style id="css" dangerouslySetInnerHTML={{ __html: this.props.css }} />
       </head>
       <body>
-        <div id="app" dangerouslySetInnerHTML={{ __html: this.props.body }} />
+        <main id="app" dangerouslySetInnerHTML={{ __html: this.props.body }} />
         <script src={this.props.entry}></script>
         <script dangerouslySetInnerHTML={this.trackingCode()} />
       </body>
